@@ -1,8 +1,8 @@
 import React from 'react';
-import TableBody from './Table/TableBody';
-import TableHeader from './Table/TableHeader';
+import TableBody from './TableBody';
+import TableHeader from './TableHeader';
 
-const Table = (context) => {
+const TableIndex = (context) => {
 	const { state: { brawlStars }} = context;
 
 	return (
@@ -20,4 +20,4 @@ const Table = (context) => {
 	);
 };
 
-export default Table;
+export default TableIndex;

@@ -1,10 +1,13 @@
 import { React, useState } from 'react';
 import './App.scss';
-import Table from './components/Table';
+import TableIndex from './components/Table/TableIndex';
 import characters from './data/characters';
+import Button from './Button/Button';
 
 const initialState = {
 	brawlStars: characters,
+	indexValue: 1,
+	sortModes: 'LeastTrophies',
 };
 
 const App = (context) => {
@@ -12,7 +15,8 @@ const App = (context) => {
 	const extendedContext = { ...context, state, setState };
 
 	return <div className="App">
-		<Table { ...extendedContext }/>
+		<TableIndex { ...extendedContext }/>
+		<Button { ...extendedContext }/>
 	</div>;
 };
 
