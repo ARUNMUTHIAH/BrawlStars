@@ -10,6 +10,10 @@ const types = {
 		SortingFunction.getPowerLevel(context),
 	ByRarity: (context) =>
 		SortingFunction.getRarity(context),
+	ByRarityDescending: (context) =>
+		SortingFunction.getRarityDescending(context),
+	ClosestToNextRank: (context) =>
+		SortingFunction.getClosestNextRank(context),
 };
 
 const Button = (context) => {
