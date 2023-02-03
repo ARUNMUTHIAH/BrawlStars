@@ -7,7 +7,7 @@ import Button from './Button/Button';
 const initialState = {
 	brawlStars: characters,
 	indexValue: 1,
-	sortModes: 'LeastTrophies',
+	sortModes: 'Least Trophies',
 };
 
 const App = (context) => {

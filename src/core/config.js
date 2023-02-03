@@ -9,12 +9,12 @@ const config = {
 		'rarity',
 	],
 	sorting: [
-		'LeastTrophies',
-		'MostTrophies',
-		'POWERLEVEL',
-		'ByRarity',
-		'ByRarityDescending',
-		'ClosestToNextRank',
+		'Least Trophies',
+		'Most Trophies',
+		'POWER LEVEL',
+		'By Rarity',
+		'By Rarity Descending',
+		'Closest To Next Rank',
 	],
 	rarityLevel: {
 		RARE: 1,

@@ -2,17 +2,17 @@ import React from 'react';
 import SortingFunction from '../services/SortingFunction';
 
 const types = {
-	LeastTrophies: (context) =>
+	'Least Trophies': (context) =>
 		SortingFunction.getLeastTrophies(context),
-	MostTrophies: (context) =>
+	'Most Trophies': (context) =>
 		SortingFunction.getMostTrophies(context),
-	POWERLEVEL: (context) =>
+	'POWER LEVEL': (context) =>
 		SortingFunction.getPowerLevel(context),
-	ByRarity: (context) =>
+	'By Rarity': (context) =>
 		SortingFunction.getRarity(context),
-	ByRarityDescending: (context) =>
+	'By Rarity Descending': (context) =>
 		SortingFunction.getRarityDescending(context),
-	ClosestToNextRank: (context) =>
+	'Closest To Next Rank': (context) =>
 		SortingFunction.getClosestNextRank(context),
 };
 
