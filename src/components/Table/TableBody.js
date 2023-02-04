@@ -10,7 +10,7 @@ const TableBody = (context) => {
 					?	<td>
 						<img
 							src={ brawlStar.image }
-							alt="fs"
+							alt="noImage"
 							width="100px"
 							height="100px"
 						/>

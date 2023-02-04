@@ -1,3 +1,14 @@
+/* eslint-disable no-magic-numbers */
+import { rndBetween } from '@laufire/utils/lib';
+
+const getCharacters = ({ config: { characters }}) =>
+	characters.map((character) => ({
+		...character,
+		powers: rndBetween(1, 10),
+		powerPoints: rndBetween(1, 100),
+		coins: rndBetween(1, 100),
+	}));
+
 const sortByLeastTrophies = ({ state: { brawlStars }}) =>
 	brawlStars.sort((a, b) => a.trophies - b.trophies);
 
@@ -20,6 +31,7 @@ const sortByClosestNextRank = ({ state: { brawlStars },
  - rankTrophies[b.rank] - b.trophies);
 
 const SortingFunction = {
+	getCharacters,
 	sortByLeastTrophies,
 	sortByMostTrophies,
 	sortByRarity,
