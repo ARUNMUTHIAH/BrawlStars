@@ -7,6 +7,7 @@ const config = {
 		'powerPoints',
 		'coins',
 		'rarity',
+		'image',
 	],
 	sorting: [
 		'Least Trophies',
@@ -17,11 +18,14 @@ const config = {
 		'Closest To Next Rank',
 	],
 	rarityLevel: {
-		RARE: 1,
-		SUPERRARE: 2,
-		STARTINGBRAWLER: 3,
+		COMMON: 1,
+		RARE: 2,
+		SUPERRARE: 3,
+		EPIC: 4,
+		MYTHIC: 5,
+		LEGENDRY: 6,
+		CHROMATIC: 7,
 	},
-
 	rankTrophies: {
 		1: 5,
 		2: 10,

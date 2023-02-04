@@ -6,17 +6,19 @@ const TableIndex = (context) => {
 	const { state: { brawlStars }} = context;
 
 	return (
-		<table className="table">
-			<TableHeader { ...context }/>
-			{brawlStars.map((brawlStar, key) =>
-				<TableBody
-					key={ key }
-					{ ...{
-						...context,
-						data: brawlStar,
-					} }
-				/>)}
-		</table>
+		<div>
+			<table className="table">
+				<TableHeader { ...context }/>
+				{brawlStars.map((brawlStar, key) =>
+					<TableBody
+						key={ key }
+						{ ...{
+							...context,
+							data: brawlStar,
+						} }
+					/>)}
+			</table>
+		</div>
 	);
 };
 
