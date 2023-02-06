@@ -1,11 +1,18 @@
 import { React, useState } from 'react';
 import './App.scss';
-import TableIndex from './components/Table/TableIndex';
-import Button from './Button/Button';
-import SortingFunction from './services/SortingFunction';
+import Square from './Image/Square';
 
-const getInitialState = (context) => ({
-	brawlStars: SortingFunction.getCharacters(context),
+const getInitialState = () => ({
+	brawlStars: {
+		name: 'SHELLY',
+		rank: 1,
+		trophies: 1,
+		rarity: 'COMMON',
+		image: '/img/SHELLY.jpeg',
+		powers: 7,
+		powerPoints: 5,
+		coins: 7,
+	},
 	indexValue: 1,
 	sortModes: 'Least Trophies',
 });
@@ -15,8 +22,7 @@ const App = (context) => {
 	const extendedContext = { ...context, state, setState };
 
 	return <div className="App">
-		<Button { ...extendedContext }/>
-		<TableIndex { ...extendedContext }/>
+		<Square { ...extendedContext }/>
 	</div>;
 };
 

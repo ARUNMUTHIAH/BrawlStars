@@ -1,13 +1,22 @@
 /* eslint-disable no-magic-numbers */
-import { rndBetween } from '@laufire/utils/lib';
 
 const getCharacters = ({ config: { characters }}) =>
 	characters.map((character) => ({
 		...character,
-		powers: rndBetween(1, 10),
-		powerPoints: rndBetween(1, 100),
-		coins: rndBetween(1, 100),
+		powers: 7,
+		powerPoints: 5,
+		coins: 5,
 	}));
+
+// const getSquare = ({ config: { size }}) =>
+// 	range(0, 3).map((window) => ({
+// 		top: 40 * size,
+// 		left: ((window * 3) + 104) * size,
+// 		height: 100 * size,
+// 		width: 100 * size,
+// 		border: 5 * size,
+// 		borderRadius: 20 * size,
+// 	}));
 
 const sortByLeastTrophies = ({ state: { brawlStars }}) =>
 	brawlStars.sort((a, b) => a.trophies - b.trophies);
