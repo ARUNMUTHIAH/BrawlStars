@@ -1,5 +1,5 @@
 import React from 'react';
-import Character from '../../../Image/Character';
+import Character from '../Character';
 
 const Container = (context) => {
 	const { state: { brawlStars }} = context;

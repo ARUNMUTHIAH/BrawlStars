@@ -10,7 +10,7 @@ const PowerPoint = (context) => {
 			alt="noImage"
 			width="40px"
 			height="40px"
-		/><label className="coinValue">{brawlStar.powerPoints}</label>
+		/><span className="coinValue">{brawlStar.powerPoints}</span>
 	</span>;
 };
 

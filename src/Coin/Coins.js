@@ -1,11 +1,11 @@
 import React from 'react';
 import PowerPoint from './PowerPoint';
-import SkullCoin from './SkullCoin';
+import BrawlerCoin from './SkullCoin';
 
 const Coins = (context) => <div className="rectangle">
 	<PowerPoint { ...context }/>
-	<label className="plusOperator"> + </label>
-	<SkullCoin { ...context }/>
+	<span className="plusOperator"> + </span>
+	<BrawlerCoin { ...context }/>
 </div>;
 
 export default Coins;

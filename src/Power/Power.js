@@ -4,12 +4,12 @@ const Power = (context) => {
 	const { data: { brawlStar }} = context;
 
 	return <div>
-		<label
+		<span
 			className="powerName"
-		>POWER</label>
-		<label
+		>POWER</span>
+		<span
 			className="powerValue"
-		>{brawlStar.powers}</label>
+		>{brawlStar.powers}</span>
 	</div>;
 };
 

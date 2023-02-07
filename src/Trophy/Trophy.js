@@ -12,7 +12,7 @@ const Trophy = (context) => {
 				width="30px"
 				height="30px"
 			/>
-			<label>{brawlStar.rank}</label>
+			<span>{brawlStar.rank}</span>
 		</div>
 	</div>;
 };

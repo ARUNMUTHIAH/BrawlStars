@@ -45,7 +45,7 @@ const config = {
 	],
 	size: 0.8,
 	multiplier: 390,
-	margin: 800,
+	margin: 770,
 
 	headings: [
 		'name',

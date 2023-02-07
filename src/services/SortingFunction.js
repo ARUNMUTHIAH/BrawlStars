@@ -12,7 +12,7 @@ const getSquare = ({ data: { key }, config: { size, multiplier, margin }}) => ({
 	height: 280 * size,
 	width: 350 * size,
 	left: (((key % 3) * multiplier) + margin) * size,
-	top: (Math.floor(key / 3) * 340) + 150,
+	top: (Math.floor(key / 3) * 340) + 200,
 });
 
 const sortByLeastTrophies = ({ state: { brawlStars }}) =>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SkullCoin = (context) => {
+const BrawlerCoin = (context) => {
 	const { data: { brawlStar }} = context;
 
 	return <span className="skullCoin">
@@ -10,8 +10,8 @@ const SkullCoin = (context) => {
 			alt="noImage"
 			width="40px"
 			height="40px"
-		/><label className="coinValue">{brawlStar.coins}</label>
+		/><span className="coinValue">{brawlStar.coins}</span>
 	</span>;
 };
 
-export default SkullCoin;
+export default BrawlerCoin;

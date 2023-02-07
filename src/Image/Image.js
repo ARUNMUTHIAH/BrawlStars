@@ -5,7 +5,7 @@ const Image = (context) => {
 
 	return (
 		<div style={ {
-			backgroundColor: 'blue',
+			backgroundColor: 'violet',
 		} }
 		>
 			<img

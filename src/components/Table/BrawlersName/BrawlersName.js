@@ -1,6 +1,6 @@
 import React from 'react';
 
 const BrawlersName = ({ data: { brawlStar }}) =>
-	<label className="name">{brawlStar.name}</label>;
+	<span className="name">{brawlStar.name}</span>;
 
 export default BrawlersName;
