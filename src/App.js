@@ -3,7 +3,7 @@ import './App.scss';
 import Button from './Button/Button';
 import BrawlersCount from './components/Table/Heading/BrawlersCount';
 import SortingFunction from './services/SortingFunction';
-import Characters from './components/Table/Characters/Characters';
+import Container from './components/Table/Characters/Container';
 
 const getInitialState = (context) => ({
 	brawlStars: SortingFunction.getCharacters(context),
@@ -18,7 +18,7 @@ const App = (context) => {
 	return <div className="App">
 		<BrawlersCount { ...extendedContext }/>
 		<Button { ...extendedContext }/>
-		<Characters { ...extendedContext }/>
+		<Container { ...extendedContext }/>
 	</div>;
 };
 

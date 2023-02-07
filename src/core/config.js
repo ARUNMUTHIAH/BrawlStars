@@ -44,6 +44,8 @@ const config = {
 		},
 	],
 	size: 0.8,
+	multiplier: 390,
+	margin: 800,
 
 	headings: [
 		'name',

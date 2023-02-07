@@ -6,20 +6,12 @@ import Power from '../Power/Power';
 import Trophy from '../Trophy/Trophy';
 import Image from './Image';
 import BrawlersName from '../components/Table/BrawlersName/BrawlersName';
+import SortingFunction from '../services/SortingFunction';
 
-const multiplier = 390;
-const margin = 800;
-
-const getSquare = ({ data: { key }, config: { size }}) => ({
-	height: 280 * size,
-	width: 350 * size,
-	left: (((key % 3) * multiplier) + margin) * size,
-	top: (Math.floor(key / 3) * 340) + 150,
-});
-const Container = (context) =>
+const Character = (context) =>
 	<div
-		className="square"
-		style={ getSquare(context) }
+		className="character"
+		style={ SortingFunction.getSquare(context) }
 	>
 		<BrawlersName { ...context }/>
 		<Trophy { ...context }/>
@@ -29,4 +21,4 @@ const Container = (context) =>
 		<Coins { ...context }/>
 	</div>;
 
-export default Container;
+export default Character;

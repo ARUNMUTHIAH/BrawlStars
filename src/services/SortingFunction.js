@@ -8,15 +8,12 @@ const getCharacters = ({ config: { characters }}) =>
 		coins: 5,
 	}));
 
-// const getSquare = ({ config: { size }}) =>
-// 	range(0, 3).map((window) => ({
-// 		top: 40 * size,
-// 		left: ((window * 3) + 104) * size,
-// 		height: 100 * size,
-// 		width: 100 * size,
-// 		border: 5 * size,
-// 		borderRadius: 20 * size,
-// 	}));
+const getSquare = ({ data: { key }, config: { size, multiplier, margin }}) => ({
+	height: 280 * size,
+	width: 350 * size,
+	left: (((key % 3) * multiplier) + margin) * size,
+	top: (Math.floor(key / 3) * 340) + 150,
+});
 
 const sortByLeastTrophies = ({ state: { brawlStars }}) =>
 	brawlStars.sort((a, b) => a.trophies - b.trophies);
@@ -41,6 +38,7 @@ const sortByClosestNextRank = ({ state: { brawlStars },
 
 const SortingFunction = {
 	getCharacters,
+	getSquare,
 	sortByLeastTrophies,
 	sortByMostTrophies,
 	sortByRarity,

@@ -1,14 +1,14 @@
 import React from 'react';
-import Container from '../../../Image/Container';
+import Character from '../../../Image/Character';
 
-const Characters = (context) => {
+const Container = (context) => {
 	const { state: { brawlStars }} = context;
 
 	return brawlStars.map((brawlStar, key) =>
-		<Container
+		<Character
 			key={ key }
 			{ ...{ ...context, data: { brawlStar, key }} }
 		/>);
 };
 
-export default Characters;
+export default Container;
