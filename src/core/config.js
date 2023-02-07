@@ -43,7 +43,7 @@ const config = {
 			image: '/img/TARA.jpeg',
 		},
 	],
-	// size: 0.4,
+	size: 0.8,
 
 	headings: [
 		'name',

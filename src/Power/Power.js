@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Power = (context) => {
-	const { state: { brawlStars }} = context;
+	const { data: { brawlStar }} = context;
 
 	return <div>
 		<label
@@ -9,7 +9,7 @@ const Power = (context) => {
 		>POWER</label>
 		<label
 			className="powerValue"
-		>{brawlStars.powers}</label>
+		>{brawlStar.powers}</label>
 	</div>;
 };
 

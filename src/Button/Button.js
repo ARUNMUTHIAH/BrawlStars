@@ -22,12 +22,14 @@ const Button = (context) => {
 	const { config: { sorting }} = context;
 
 	return (
-		<button onClick={ () => setState({
-			...state,
-			indexValue: indexValue + 1,
-			sortModes: sorting[indexValue % sorting.length],
-			brawlStars: types[sortModes](context),
-		}) }
+		<button
+			className="button"
+			onClick={ () => setState({
+				...state,
+				indexValue: indexValue + 1,
+				sortModes: sorting[indexValue % sorting.length],
+				brawlStars: types[sortModes](context),
+			}) }
 		>{sortModes}</button>
 	);
 };
