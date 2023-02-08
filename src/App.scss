@@ -8,17 +8,10 @@
 .name {
 	position: absolute;
 	font-size: 30px;
-	left : -10px;
 	font-weight: bold;
 }
-.header {
-	border : 2px solid;
-}
-.body {
+.body .table .header{
 	border: 2px solid;
-}
-.table {
-	border: 2px collapse;
 }
 .character {
 	position: absolute;
@@ -113,7 +106,7 @@
 	position: absolute;
 	top : -40px;
 	font-size: 30px;
-	left:16px;
+	left:5%;
 }
 .img {
 	position:absolute;
