@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Image = (context) => {
+const BrawlerImage = (context) => {
 	const { data: { brawlStar }} = context;
 
 	return (
@@ -17,4 +17,4 @@ const Image = (context) => {
 		</div>);
 };
 
-export default Image;
+export default BrawlerImage;

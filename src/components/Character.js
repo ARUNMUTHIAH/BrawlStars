@@ -1,11 +1,11 @@
 /* eslint-disable no-magic-numbers */
 import React from 'react';
-import Coins from '../Coin/Coins';
-import Rank from './Table/Rank/Rank';
+import Coins from './Coin/Coins';
+import Rank from './Rank/Rank';
 import Power from '../Power/Power';
 import Trophy from '../Trophy/Trophy';
-import Image from '../Image/Image';
-import BrawlersName from './Table/BrawlersName/BrawlersName';
+import BrawlerImage from '../Image/BrawlerImage';
+import BrawlersName from './BrawlersName/BrawlersName';
 import SortingFunction from '../services/SortingFunction';
 
 const Character = (context) =>
@@ -15,7 +15,7 @@ const Character = (context) =>
 	>
 		<BrawlersName { ...context }/>
 		<Trophy { ...context }/>
-		<Image { ...context }/>
+		<BrawlerImage { ...context }/>
 		<Rank { ...context }/>
 		<Power { ...context }/>
 		<Coins { ...context }/>

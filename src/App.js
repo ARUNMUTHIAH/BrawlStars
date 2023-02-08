@@ -1,9 +1,9 @@
 import { React, useState } from 'react';
 import './App.scss';
 import Button from './Button/Button';
-import BrawlersCount from './components/Table/Heading/BrawlersCount';
+import BrawlersCount from './components/Heading/BrawlersCount';
 import SortingFunction from './services/SortingFunction';
-import Container from './components/Table/Container';
+import Container from './components/Container';
 
 const getInitialState = (context) => ({
 	brawlStars: SortingFunction.getCharacters(context),

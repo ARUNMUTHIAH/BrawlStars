@@ -1,6 +1,6 @@
 import React from 'react';
 import PowerPoint from './PowerPoint';
-import BrawlerCoin from './SkullCoin';
+import BrawlerCoin from './BrawlerCoin';
 
 const Coins = (context) => <div className="rectangle">
 	<PowerPoint { ...context }/>
