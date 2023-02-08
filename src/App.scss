@@ -5,6 +5,12 @@
 	height: 100vh;
 	background-size: cover;
 }
+.name {
+	position: absolute;
+	font-size: 30px;
+	left : -10px;
+	font-weight: bold;
+}
 .header {
 	border : 2px solid;
 }
@@ -39,12 +45,6 @@
 	position: absolute;
 	left :60%;
 	top : 10%;
-}
-.name {
-	position: absolute;
-	top : 60%;
-	font-size: 30px;
-	font-weight: bold;
 }
 .powerName{
 	position : absolute;
@@ -92,15 +92,15 @@
 }
 .header {
 	position: absolute;
-	height : 33px;
-	width : 180px;
+	height : 15%;
+	width : 70%;
 	border: 2px solid;
 	top:-40px;
 	left : 18%;
 }
 .bar {
 	position: absolute;
-	height : 33px;
+	height : 100%;
 	background-color: black;
 }
 .plusOperator {
@@ -117,4 +117,11 @@
 .img {
 	position:absolute;
 	background-color: violet;
+}
+.trophyStyle {
+	position: absolute;
+	font-size: 500px;
+ 	left : 35px;
+	font-size: 70%;
+	top : 10%;
 }

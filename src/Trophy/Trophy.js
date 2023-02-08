@@ -20,7 +20,7 @@ const Trophy = (context) => {
 						width="30px"
 						height="30px"
 					/>
-					<span>{brawlStar.trophies}</span>
+					<span className="trophyStyle">{brawlStar.trophies}</span>
 				</span>
 			</div>
 		</div>);
