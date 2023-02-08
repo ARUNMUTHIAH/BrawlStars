@@ -72,6 +72,7 @@
 	font-size : 38px;
 	right : 50%;
 	top : -10%;
+	left : 100%;
 }
 .button {
 	position: absolute;
@@ -89,13 +90,18 @@
 	left : 40%;
 	font-size : 50px;
 }
-.bar {
+.header {
 	position: absolute;
 	height : 33px;
 	width : 180px;
 	border: 2px solid;
 	top:-40px;
 	left : 18%;
+}
+.bar {
+	position: absolute;
+	height : 33px;
+	background-color: black;
 }
 .plusOperator {
 	position:absolute;
@@ -107,4 +113,8 @@
 	top : -40px;
 	font-size: 30px;
 	left:16px;
+}
+.img {
+	position:absolute;
+	background-color: violet;
 }

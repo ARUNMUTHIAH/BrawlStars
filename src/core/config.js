@@ -1,37 +1,40 @@
+/* eslint-disable no-magic-numbers */
+import { rndBetween } from '@laufire/utils/lib';
+
 const config = {
 	characters: [
 		{
 			name: 'SHELLY',
 			rank: 1,
-			trophies: 1,
+			trophies: rndBetween(1, 50),
 			rarity: 'COMMON',
 			image: '/img/SHELLY.jpeg',
 		},
 		{
 			name: 'EL PRIMO',
 			rank: 2,
-			trophies: 2,
+			trophies: rndBetween(1, 50),
 			rarity: 'RARE',
 			image: '/img/EL PRIMO.jpeg',
 		},
 		{
 			name: 'BO',
 			rank: 3,
-			trophies: 3,
+			trophies: rndBetween(1, 50),
 			rarity: 'EPIC',
 			image: '/img/BO.jpeg',
 		},
 		{
 			name: 'BROCK',
 			rank: 4,
-			trophies: 4,
+			trophies: rndBetween(1, 50),
 			rarity: 'RARE',
 			image: '/img/BROCK.jpeg',
 		},
 		{
 			name: 'COLT',
 			rank: 5,
-			trophies: 5,
+			trophies: rndBetween(1, 50),
 			rarity: 'MYTHIC',
 			image: '/img/COLT.jpeg',
 		},

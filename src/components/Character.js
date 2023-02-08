@@ -1,4 +1,3 @@
-/* eslint-disable no-magic-numbers */
 import React from 'react';
 import Coins from './Coin/Coins';
 import Rank from './Rank/Rank';

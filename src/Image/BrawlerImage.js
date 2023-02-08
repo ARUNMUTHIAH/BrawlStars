@@ -4,15 +4,13 @@ const BrawlerImage = (context) => {
 	const { data: { brawlStar }} = context;
 
 	return (
-		<div style={ {
-			backgroundColor: 'violet',
-		} }
-		>
+		<div>
 			<img
+				className="img"
 				src={ brawlStar.image }
 				alt="noImage"
-				height="200px"
-				width="200px"
+				height="100%"
+				width="100%"
 			/>
 		</div>);
 };
