@@ -46,9 +46,8 @@ const config = {
 			image: '/img/TARA.jpeg',
 		},
 	],
-	size: 0.8,
 	multiplier: 390,
-	margin: 770,
+	margin: 450,
 
 	headings: [
 		'name',

@@ -8,10 +8,8 @@ const getCharacters = ({ config: { characters }}) =>
 		coins: 5,
 	}));
 
-const getSquare = ({ data: { key }, config: { size, multiplier, margin }}) => ({
-	height: 280 * size,
-	width: 350 * size,
-	left: (((key % 3) * multiplier) + margin) * size,
+const getSquare = ({ data: { key }, config: { multiplier, margin }}) => ({
+	left: ((key % 3) * multiplier) + margin,
 	top: (Math.floor(key / 3) * 340) + 200,
 });
 
