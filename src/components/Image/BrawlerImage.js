@@ -9,8 +9,6 @@ const BrawlerImage = (context) => {
 				className="img"
 				src={ brawlStar.image }
 				alt="noImage"
-				height="100%"
-				width="100%"
 			/>
 		</div>);
 };

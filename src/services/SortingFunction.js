@@ -3,9 +3,9 @@
 const getPowerLevel = (context) => {
 	const { setState } = context;
 
-	return setInterval(() => setState((prevState) =>
-		({ ...prevState,
-			power: !prevState.power })), 1000);
+	return setInterval(() => setState((state) =>
+		({ ...state,
+			powerSymbol: !state.powerSymbol })), 1000);
 };
 
 const getCharacters = ({ config: { characters }}) =>

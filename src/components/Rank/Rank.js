@@ -6,8 +6,6 @@ const Rank = ({ data: { brawlStar }}) =>
 			className="rank"
 			src="/img/HEXOGON.jpeg"
 			alt="noImage"
-			width="50px"
-			height="50px"
 		/><span className="rankValue">{brawlStar.rank}</span>
 	</div>;
 

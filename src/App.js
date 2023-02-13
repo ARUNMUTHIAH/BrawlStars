@@ -9,7 +9,7 @@ const getInitialState = (context) => ({
 	brawlStars: SortingFunction.getCharacters(context),
 	indexValue: 1,
 	sortModes: 'Least Trophies',
-	power: false,
+	powerSymbol: false,
 });
 
 const App = (context) => {

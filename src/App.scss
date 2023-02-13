@@ -78,6 +78,8 @@
 	position: absolute;
 	top : -50px;
 	border-radius: 100%;
+	width:15%;
+	height:20%;
 }
 .brawlerCount {
 	position: absolute;
@@ -113,6 +115,8 @@
 .img {
 	position:absolute;
 	background-color: violet;
+	height:100%;
+	width:100%;
 }
 .trophyStyle {
 	position: absolute;
@@ -131,7 +135,7 @@
 	border-radius: 50%;
 }
 .powerBottom {
-	 padding-top : 0%;
+	 padding-top : 0px;
 	border-radius: 50%;
 }
 
