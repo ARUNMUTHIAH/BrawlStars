@@ -1,5 +1,13 @@
 /* eslint-disable no-magic-numbers */
 
+const getPowerLevel = (context) => {
+	const { setState } = context;
+
+	return setInterval(() => setState((prevState) =>
+		({ ...prevState,
+			power: !prevState.power })), 1000);
+};
+
 const getCharacters = ({ config: { characters }}) =>
 	characters.map((character) => ({
 		...character,
@@ -9,8 +17,8 @@ const getCharacters = ({ config: { characters }}) =>
 	}));
 
 const getSquare = ({ data: { key }, config: { multiplier, margin }}) => ({
-	left: ((key % 3) * multiplier) + margin,
-	top: (Math.floor(key / 3) * 340) + 200,
+	left: (key % 3 * multiplier) + margin,
+	top: Math.floor(key / 3) * multiplier + 200,
 });
 
 const sortByLeastTrophies = ({ state: { brawlStars }}) =>
@@ -36,6 +44,7 @@ const sortByClosestNextRank = ({ state: { brawlStars },
 
 const SortingFunction = {
 	getCharacters,
+	getPowerLevel,
 	getSquare,
 	sortByLeastTrophies,
 	sortByMostTrophies,

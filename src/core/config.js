@@ -11,7 +11,7 @@ const config = {
 			image: '/img/SHELLY.jpeg',
 		},
 		{
-			name: 'EL PRIMO',
+			name: 'ELPRIMO',
 			rank: 2,
 			trophies: rndBetween(1, 50),
 			rarity: 'RARE',
@@ -46,8 +46,8 @@ const config = {
 			image: '/img/TARA.jpeg',
 		},
 	],
-	multiplier: 390,
-	margin: 450,
+	multiplier: 430,
+	margin: 420,
 
 	headings: [
 		'name',

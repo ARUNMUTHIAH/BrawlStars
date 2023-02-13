@@ -1,5 +1,5 @@
 .App {
-	background-image: url('https://images7.alphacoders.com/127/1279154.jpg') ;
+	background-image: url('https://images.squarespace-cdn.com/content/v1/58af450eb3db2b0582612f1d/1498115690320-JKQCEQN70EQRPMLUPEVQ/image-asset.jpeg?format=1000w') ;
 	background-repeat: no-repeat;
 	width: 100vw;
 	height: 100vh;
@@ -7,8 +7,9 @@
 }
 .name {
 	position: absolute;
-	font-size: 30px;
+	font-size: 33px;
 	font-weight: bold;
+	top : 60%;
 }
 .body .table .header{
 	border: 2px solid;
@@ -78,11 +79,12 @@
 	top : -50px;
 	border-radius: 100%;
 }
-.length {
+.brawlerCount {
 	position: absolute;
 	top : 5%;
 	left : 40%;
 	font-size : 50px;
+	color : white;
 }
 .header {
 	position: absolute;
@@ -119,3 +121,17 @@
 	font-size: 70%;
 	top : 10%;
 }
+.powerSymbol {
+	position:absolute;
+	top : 58%;
+	left : 45%;
+}
+.powerTop {
+	padding-top : 5px;
+	border-radius: 50%;
+}
+.powerBottom {
+	 padding-top : 0%;
+	border-radius: 50%;
+}
+

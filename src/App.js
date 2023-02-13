@@ -9,11 +9,15 @@ const getInitialState = (context) => ({
 	brawlStars: SortingFunction.getCharacters(context),
 	indexValue: 1,
 	sortModes: 'Least Trophies',
+	power: false,
 });
 
 const App = (context) => {
 	const [state, setState] = useState(getInitialState(context));
 	const extendedContext = { ...context, state, setState };
+	const { once } = context;
+
+	once(() => SortingFunction.getPowerLevel(extendedContext));
 
 	return <div className="App">
 		<BrawlersCount { ...extendedContext }/>
