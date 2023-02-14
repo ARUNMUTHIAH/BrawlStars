@@ -16,11 +16,6 @@ const getCharacters = ({ config: { characters }}) =>
 		coins: 5,
 	}));
 
-const getSquare = ({ data: { key }, config: { multiplier, margin }}) => ({
-	left: (key % 3 * multiplier) + margin,
-	top: Math.floor(key / 3) * multiplier + 200,
-});
-
 const sortByLeastTrophies = ({ state: { brawlStars }}) =>
 	brawlStars.sort((a, b) => a.trophies - b.trophies);
 
@@ -45,7 +40,6 @@ const sortByClosestNextRank = ({ state: { brawlStars },
 const SortingFunction = {
 	getCharacters,
 	getPowerLevel,
-	getSquare,
 	sortByLeastTrophies,
 	sortByMostTrophies,
 	sortByRarity,
