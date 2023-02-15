@@ -7,9 +7,7 @@ import BrawlerImage from './Image/BrawlerImage';
 import BrawlersName from './BrawlersName/BrawlersName';
 
 const Character = (context) =>
-	<div
-		className="character"
-	>
+	<div className="character">
 		<BrawlerImage { ...context }/>
 		<Power { ...context }/>
 		<Coins { ...context }/>

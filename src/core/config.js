@@ -45,6 +45,7 @@ const config = {
 			rarity: 'MYTHIC',
 			image: '/img/TARA.jpeg',
 		},
+
 	],
 	multiplier: 50,
 	margin: 50,

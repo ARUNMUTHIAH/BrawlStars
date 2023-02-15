@@ -8,9 +8,7 @@ const Trophy = (context) => {
 		<div className="header">
 			<div
 				className="bar"
-				style={ {
-					width: `${ brawlStar.trophies }px`,
-				} }
+				style={ { width: `${ brawlStar.trophies }px` } }
 			>
 				<span className="cup">
 					<img
